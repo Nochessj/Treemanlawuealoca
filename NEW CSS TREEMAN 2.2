@@ -1,0 +1,215 @@
+/* --- Reseteo Básico y Variables de Color --- */
+:root {
+    --dark-green: #0b0b0b;
+    --light-green: #155724;
+    --main-bg: #140137;
+    --border-color: #dcedde;
+    --text-color: #f0f5f1;
+    --placeholder-gray: #cccccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-green);
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--text-color);
+    /* Para que el footer se quede abajo en pantallas grandes */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Encabezado --- */
+.site-header {
+    background-color: var(--dark-green);
+    position: relative;
+    overflow: hidden; /* Oculta la parte extra de la curva */
+    padding: 20px 60px;
+    z-index: 10;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 12;
+}
+
+.header-curve {
+    position: absolute;
+    bottom: -150px; /* Posicionamiento de la curva */
+    left: -5%;
+    width: 110%;
+    height: 200px; /* Altura de la curva */
+    background-color: var(--light-green);
+    border-radius: 50% / 100%; /* Crea la forma elíptica */
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    z-index: 11;
+}
+
+/* --- Logo --- */
+.logo h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 72px;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 0.8;
+}
+
+.logo h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/* --- Navegación --- */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--border-color);
+    font-size: 18px;
+    padding: 8px 25px;
+    border: 1px solid var(--border-color);
+    border-radius: 50px; /* Crea el botón ovalado */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.main-nav a:hover {
+    background-color: var(--border-color);
+    color: var(--dark-green);
+}
+
+/* --- Contenido Principal --- */
+.site-main {
+    flex-grow: 1; /* Empuja el footer hacia abajo */
+    padding: 40px 60px;
+    background: linear-gradient(to bottom, var(--light-green) 0px, var(--dark-green) 200px);
+}
+
+.content-wrapper {
+    background-color: var(--main-bg);
+    border: 2px solid var(--border-color);
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    height: 100%;
+    min-height: 600px;
+}
+
+.left-column {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.right-column {
+    width: 70%;
+}
+
+.placeholder-box {
+    width:  100%;
+    height: 100%;
+}
+
+.gray-box {
+    background-color: var(--placeholder-gray);
+}
+
+.black-box {
+    background-color: #000000;
+}
+
+
+/* --- Pie de Página --- */
+.site-footer {
+    background-color: var(--dark-green);
+    padding: 25px 60px;
+    border-top: 1px solid var(--light-green);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo {
+    width: 60px;
+    height: auto;
+}
+
+.copyright {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #a0a0a0;
+}
+
+.social-media {
+    border-left: 1px solid #ffffff40;
+    border-right: 1px solid #ffffff40;
+    padding: 0 40px;
+    gap: 15px;
+}
+
+.social-media p {
+    font-size: 16px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a svg {
+    fill: var(--text-color);
+    width: 24px;
+    height: 24px;
+    transition: fill 0.3s;
+}
+
+.social-icons a:hover svg {
+    fill: var(--light-green);
+}
+
+.contact-button {
+    text-decoration: none;
+    color: var(--border-color);
+    font-size: 18px;
+    padding: 8px 25px;
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: var(--border-color);
+    color: var(--dark-green);
+}
+
+.footer-logo {
+    width: 250px;
+    height: auto;
+}
+
