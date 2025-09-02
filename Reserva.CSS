@@ -1,0 +1,198 @@
+:root {
+  --dark-green: #0b0b0b;
+  --light-green: #155724;
+  --main-bg: #140137;
+  --border-color: #dcedde;
+  --text-color: #f0f5f1;
+  --input-bg: #222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark-green);
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.site-header {
+  background-color: var(--dark-green);
+  position: relative;
+  padding: 20px 60px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-img {
+  height: 150px;
+  width: auto;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--border-color);
+  font-size: 18px;
+  padding: 8px 25px;
+  border: 1px solid var(--border-color);
+  border-radius: 50px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.main-nav a:hover {
+  background-color: var(--border-color);
+  color: var(--dark-green);
+}
+
+/* SECCIÓN RESERVAS */
+.site-main {
+  flex-grow: 1;
+  padding: 40px 60px;
+  background: linear-gradient(to bottom, var(--light-green) 0px, var(--dark-green) 200px);
+}
+
+.reservas-section {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--main-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.titulo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-reservas {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-reservas label {
+  font-size: 18px;
+}
+
+.form-reservas input {
+  padding: 10px;
+  background: var(--input-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-color);
+}
+
+.btn-reservar {
+  background-color: transparent;
+  color: var(--border-color);
+  border: 1px solid var(--border-color);
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn-reservar:hover {
+  background-color: var(--border-color);
+  color: var(--dark-green);
+}
+
+/* --- Pie de Página --- */
+.site-footer {
+    background-color: var(--dark-green);
+    padding: 25px 60px;
+    border-top: 1px solid var(--light-green);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo {
+    width: 60px;
+    height: auto;
+}
+
+.copyright {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #a0a0a0;
+}
+
+.social-media {
+    border-left: 1px solid #ffffff40;
+    border-right: 1px solid #ffffff40;
+    padding: 0 40px;
+    gap: 15px;
+}
+
+.social-media p {
+    font-size: 16px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a svg {
+    fill: var(--text-color);
+    width: 24px;
+    height: 24px;
+    transition: fill 0.3s;
+}
+
+.social-icons a:hover svg {
+    fill: var(--light-green);
+}
+
+.contact-button {
+    text-decoration: none;
+    color: var(--border-color);
+    font-size: 18px;
+    padding: 8px 25px;
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: var(--border-color);
+    color: var(--dark-green);
+}
+
+.footer-logo {
+    width: 250px;
+    height: auto;
+}
+
