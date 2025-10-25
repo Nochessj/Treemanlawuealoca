@@ -1,0 +1,57 @@
+/* ✅ Mejoras RESPONSIVE específicas */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .header-container {
+        padding: 15px 30px;
+    }
+
+    .logo h1 {
+        font-size: 60px;
+    }
+
+    .logo h2 {
+        font-size: 20px;
+    }
+
+    .video-container {
+        height: 350px;
+    }
+
+    .dishes-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .main-nav a {
+        font-size: 14px;
+        padding: 6px 13px;
+    }
+
+    .instagram-grid,  
+    .dishes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .video-container {
+        height: 250px;
+    }
+
+    .footer-container {
+        text-align: center;
+    }
+}
